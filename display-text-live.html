@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Certificate</title>
+	<link href='http://fonts.googleapis.com/css?family=Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$.noConflict();
+		jQuery(document).ready(function($) {
+			// Name
+			$('.cert-form-name').keyup(function () {
+			  $('.cert-name').text($(this).val());
+			});
+
+			// Date
+			$('.cert-form-date').keyup(function () {
+			  $('.cert-date').text($(this).val());
+			});
+
+			// Month
+			$('.cert-form-month').keyup(function () {
+			  $('.cert-month').text($(this).val());
+			});
+
+			// Year
+			$('.cert-form-year').keyup(function () {
+			  $('.cert-year').text($(this).val());
+			});
+		});
+	</script>
+
+	<style type="text/css">
+		body 				{ width: 1024px;margin:0 auto;font-family: Helvetica;}
+		/*Certificate Form*/
+		.cert-form 			{  width: 275px;height:275px;float: left;margin-right: 20px;padding-right: 20px;border-right:1px solid #ddd;}
+		.cert-form .field 	{ width: 45%;float: left;margin: 0 2% 0 0; }
+		.cert-form input 	{ width: 90%; }
+		/*Certificate */
+		.cert 				{ width: 550px;height: 430px;float: left;position: relative;font-family: 'Dawning of a New Day', cursive; }
+		.cert .cert-name 	{ position: absolute;top: 140px;font-size: 28px;left: 66px;width: 75%;text-align: center; }
+		.cert .cert-date	{ width: 10%;position: absolute;top: 252px;left: 175px;font-size: 22px;text-align: center; }
+		.cert .super 		{ vertical-align: super;font-size:50%; }
+		.cert .cert-month	{ width: 17%;position: absolute;top: 252px;left: 250px;font-size: 22px;text-align: center; }
+		.cert .cert-year	{ width: 9%;position: absolute;top: 252px;left: 398px;font-size: 22px;text-align: center; }
+	</style>
+
+</head>
+<body>
+	<div class="cert-form">
+		<h2>Certificate Form</h2>
+		<div class="field">
+			<label>Name</label><br>
+			<input type="text" class="cert-form-name" placeholder="Enter Name">
+		</div>
+		<div class="field">
+			<label>Date</label><br>
+			<input type="text" class="cert-form-date" placeholder="Enter Date">
+		</div>
+		<div class="field">
+			<label>Month</label><br>
+			<input type="text" class="cert-form-month" placeholder="Enter Month">
+		</div>
+		<div class="field">
+			<label>Year</label><br>
+			<input type="text" class="cert-form-year" placeholder="Enter Year">
+		</div>
+	</div>
+
+	<div class="cert" style="background:url(/certificate.jpg) no-repeat;">
+			<div class="cert-name">Your Name Here</div>
+			<div class="cert-date">14<span class="super">th</span></div>
+			<div class="cert-month">January</div>
+			<div class="cert-year">2012</div>
+	</div>
+</body>
+</html>
