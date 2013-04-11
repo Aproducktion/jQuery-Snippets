@@ -4,7 +4,7 @@ jQuery-Snippets
 A collection of jQuery Snippets
 
 
-
+--------------------------------------------------------------------------------
 ###Display input text values in realtime
 
 ####Use this function
@@ -19,3 +19,4 @@ $('#name').keyup(function () {
 <input type="text" id="name" />
 <span id="display"></span>
 ```
+--------------------------------------------------------------------------------
