@@ -8,7 +8,7 @@ A collection of jQuery Snippets
 ###Display input text values in realtime
 
 ####Use this function
-```jquery
+```javascript
 $('#name').keyup(function () {
   $('#display').text($(this).val());
 });
