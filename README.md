@@ -5,16 +5,16 @@ A collection of jQuery Snippets
 
 
 --------------------------------------------------------------------------------
-###Display input text values in realtime
+###Display input text values in realtime [Download Example](https://github.com/Aproducktion/jQuery-Snippets/blob/master/display-text-live.html)
 
-####Use this function
+#####Use this function
 ```javascript
 $('#name').keyup(function () {
   $('#display').text($(this).val());
 });
 ```
 
-####And this HTML:
+#####And this HTML:
 ```html
 <input type="text" id="name" />
 <span id="display"></span>
