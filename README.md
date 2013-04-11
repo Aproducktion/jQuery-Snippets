@@ -20,5 +20,6 @@ $('#name').keyup(function () {
 <span id="display"></span>
 ```
 
-[Download Example](https://github.com/Aproducktion/jQuery-Snippets/blob/master/display-text-live.html)
+#####[Download Example](https://github.com/Aproducktion/jQuery-Snippets/blob/master/display-text-live.html)
+
 --------------------------------------------------------------------------------
