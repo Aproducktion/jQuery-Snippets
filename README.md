@@ -5,7 +5,7 @@ A collection of jQuery Snippets
 
 
 --------------------------------------------------------------------------------
-###Display input text values in realtime [Download Example](https://github.com/Aproducktion/jQuery-Snippets/blob/master/display-text-live.html)
+###Display input text values in realtime
 
 #####Use this function
 ```javascript
@@ -19,4 +19,6 @@ $('#name').keyup(function () {
 <input type="text" id="name" />
 <span id="display"></span>
 ```
+
+[Download Example](https://github.com/Aproducktion/jQuery-Snippets/blob/master/display-text-live.html)
 --------------------------------------------------------------------------------
