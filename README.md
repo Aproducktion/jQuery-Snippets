@@ -5,7 +5,7 @@ A collection of jQuery Snippets
 
 
 --------------------------------------------------------------------------------
-###Display input text values in realtime
+###Display input text values in realtime [Demo](http://htmlpreview.github.io/?https://raw.github.com/Aproducktion/jQuery-Snippets/master/display-text-live.html)
 
 #####Use this function
 ```javascript
