@@ -7,21 +7,18 @@ A collection of jQuery Snippets
 --------------------------------------------------------------------------------
 ###Display input  values in realtime 
 
-#####Use this function for Text
+#####Use this function for Text Input Elements
 ```javascript
 $('#name').keyup(function () {
   $('#display-text').text($(this).val());
 });
 ```
-
-#####Use this function for Options Selects
+#####Use this function for Select Elements
 ```javascript
 $('#name').bind("change keyup", function(event){
   $('#display-select').text($(this).val());
 });
 ```
-
-
 
 #####And this HTML:
 ```html
