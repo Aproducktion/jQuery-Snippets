@@ -81,5 +81,53 @@ $('.repeater-field').repeater();
 </div>
 ```
 
+--------------------------------------------------------------------------------
+###Reusable Select All Function
+
+#####Add this script to your file:
+```
+// Select All Function ====================================================================
+$.fn.selectAll = function(checkboxClass) {
+	this.bind("change keyup", function(event){
+
+		alert("Test");
+
+	    if(this.checked) 
+	    {
+	        $(checkboxClass).each(function() {
+	            this.checked = true;
+	        });
+	    }
+
+	    else
+	    {
+	        $(checkboxClass).each(function() {
+	            this.checked = false;
+	        });    
+	    }
+
+	});
+};
+// ------------------------------------------------------------
+
+$('.select-all').selectAll('.selectbox');
+```
+
+#####Follow this HTML structure:
+```
+<input type="checkbox" class="your-select-all-button">
+
+<input type="checkbox" class="your-select-box-class">
+<input type="checkbox" class="your-select-box-class">
+<input type="checkbox" class="your-select-box-class">
+```
+
+#####Initiate Funtion and Pass Params:
+```
+<script>
+	$('.your-select-all-button').selectAll('.your-select-box-class');
+</script>
+```
+
 
 
