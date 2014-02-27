@@ -107,8 +107,6 @@ Note: by defualt the function looks for the class of ".repeater-field"
 $.fn.selectAll = function(checkboxClass) {
 	this.bind("change keyup", function(event){
 
-		alert("Test");
-
 	    if(this.checked) 
 	    {
 	        $(checkboxClass).each(function() {
