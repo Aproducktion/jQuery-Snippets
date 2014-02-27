@@ -92,7 +92,7 @@ The Repeater Field is initaited by looking for the provided class wrapped around
 	</div>	
 </div>
 ```
-And then Initaite Using the Following code:
+And then Initaited Using the Following code:
 ```
 $('.my-class').repeater();
 ```
