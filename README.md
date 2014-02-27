@@ -34,9 +34,9 @@ $('#name').bind("change keyup", function(event){
 #####[Download Example](https://github.com/Aproducktion/jQuery-Snippets/blob/master/display-text-live.html) | [Live Demo](http://htmlpreview.github.io/?https://raw.github.com/Aproducktion/jQuery-Snippets/master/display-text-live.html)
 
 --------------------------------------------------------------------------------
-###REUSABLE REPEATER FIELD	FUNCTION
+###Reusable Repeater Field Function
 
-#####Add this script to your file
+#####Add this script to your file:
 ```
 // REUSABLE REPEATER FIELD	FUNCTION
 // ------------------------------------------------------------
