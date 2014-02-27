@@ -107,6 +107,8 @@ Note: by defualt the function looks for the class of ".repeater-field"
 $.fn.selectAll = function(checkboxClass) {
 	this.bind("change keyup", function(event){
 
+		alert("Test");
+
 	    if(this.checked) 
 	    {
 	        $(checkboxClass).each(function() {
@@ -137,7 +139,7 @@ $('.select-all').selectAll('.selectbox');
 <input type="checkbox" class="your-select-box-class">
 ```
 
-#####Initiate Funtion and Pass Params:
+#####Initiate Function and Pass Params:
 ```
 <script>
 	$('.your-select-all-button').selectAll('.your-select-box-class');
