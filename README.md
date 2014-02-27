@@ -68,18 +68,35 @@ var fieldCount = 1; //Track the field amounts
 // ------------------------------------------------------------
 
 $('.repeater-field').repeater();
+
 ```
 #####And this HTML:
 ```
 <div class="repeater-field">
-	<div class="field phone">
-		{{ Form::label('store_phone_number', 'Phone') }}
-		{{ Form::text('store_phone_number', '', array('placeholder' => '+01 (xxx) xxx-xxxx')) }}
-		<button type="button" class="ui button mini green add-field">Add field</button>
-		<button type="button" class="ui button mini red remove-field">Remove</button>
-	</div>
+	<div class="field">
+		<input  name="" type="text" value="" >						  	
+		<button type="button" class="add-field">Add field</button>
+		<button type="button" class="remove-field">Remove</button>						
+	</div>	
 </div>
 ```
+
+#####Instructions:
+The Repeater Field is initaited by looking for the provided class wrapped around this structure:
+```
+<div class="my-class">
+	<div class="field">
+		<input  name="" type="text" value="" >						  	
+		<button type="button" class="add-field">Add field</button>
+		<button type="button" class="remove-field">Remove</button>						
+	</div>	
+</div>
+```
+And then Initaite Using the Following code:
+```
+$('.my-class').repeater();
+```
+Note: by defualt the function looks for the class of ".repeater-field"
 
 --------------------------------------------------------------------------------
 ###Reusable Select All Function
